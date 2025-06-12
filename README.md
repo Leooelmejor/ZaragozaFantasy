@@ -1,3 +1,5 @@
+# ZaragozaFantasy
+Aplicación móvil de fantasy fútbol para equipos de Zaragoza
 # zaragoza_fantasy_app
 
 A new Flutter project.
