@@ -1,0 +1,69 @@
+# ==============================
+# 📱 CONFIGURACIÓN DEL PROYECTO
+# ==============================
+name: zaragoza_fantasy_app
+description: "Aplicación móvil de fantasy fútbol para equipos de Zaragoza"
+publish_to: 'none' # No publicar en pub.dev (app privada)
+
+# Versión de la aplicación (1.0.0) + build number (+1)
+version: 1.0.0+1
+
+# ==============================
+# 🎯 ENTORNO Y SDK
+# ==============================
+environment:
+  sdk: ^3.7.2 # Dart SDK mínimo requerido
+
+# ==============================
+# 📦 DEPENDENCIAS PRINCIPALES
+# ==============================
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ✅ ESENCIALES - UI y funcionalidad core
+  cupertino_icons: ^1.0.8      # Iconos de iOS para consistencia cross-platform
+  http: 1.3.0                  # Cliente HTTP para comunicación con backend Node.js
+  google_fonts: ^6.1.0         # Tipografías Google (Montserrat, Poppins, Urbanist)
+
+# ==============================
+# 🧪 DEPENDENCIAS DE DESARROLLO
+# ==============================
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Herramientas de desarrollo y calidad de código
+  flutter_lints: ^5.0.0           # Reglas de linting para código limpio
+  flutter_launcher_icons: ^0.13.1 # Generación automática de iconos de app
+
+# ==============================
+# 📱 CONFIGURACIÓN DE FLUTTER
+# ==============================
+flutter:
+  uses-material-design: true # Habilita Material Design Icons
+
+  # ==============================
+  # 🖼️ ASSETS DE LA APLICACIÓN
+  # ==============================
+  assets:
+    # Logos para splash screens y branding
+    - assets/splash/logo_splash.png   # Logo principal splash screen
+    - assets/splash/logo_splash2.png  # Logo alternativo para login
+    
+    # Imágenes de la aplicación
+    - assets/futbol.png               # Fondo de campo de fútbol para alineaciones
+
+  # ==============================
+  # 🔤 FUENTES (Usando Google Fonts en su lugar)
+  # ==============================
+  # NOTA: Las fuentes se cargan dinámicamente via google_fonts package
+  # No se requieren archivos locales de fuentes
+
+# ==============================
+# 🎨 CONFIGURACIÓN DE ICONOS
+# ==============================
+flutter_launcher_icons:
+  android: true                              # Generar iconos para Android
+  ios: true                                  # Generar iconos para iOS
+  image_path: assets/splash/logo_splash.png  # Usa el mismo logo del splash
